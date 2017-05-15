@@ -1,0 +1,22 @@
+<section class="switch-page">
+	<h2>Switch 开关</h2>
+
+	<section>
+		<h3>基础用法</h3>
+		<div>
+			<el-switch v-model="value1" on-text="ONONON" off-text="OFFFFF" :width="100">
+			</el-switch>
+			<el-switch v-model="value2" on-color="#13ce66" off-color="#ff4949">
+			</el-switch>
+		</div>
+	</section>
+	<section>
+		<h3>禁用状态</h3>
+		<div>
+			<el-switch v-model="value4" on-text="" off-text="" disabled>
+			</el-switch>
+			<el-switch v-model="value5" disabled>
+			</el-switch>
+		</div>
+	</section>
+</section>

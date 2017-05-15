@@ -1,0 +1,20 @@
+<section class="toast-page">
+	<h2>Toast 消息提示</h2>
+	<section>
+		<h3>基础用法</h3>
+		<p class="desc">从顶部出现，3 秒后自动消失。</p>
+		<template>
+			<el-button :plain="true" @click="open">打开消息提示</el-button>
+		</template>
+	</section>
+	<section>
+		<h3>不同状态</h3>
+		<p class="desc">用来显示「成功、警告、消息、错误」类的操作反馈。</p>
+		<template>
+			<el-button :plain="true" @click="open2">成功</el-button>
+			<el-button :plain="true" @click="open3">警告</el-button>
+			<el-button :plain="true" @click="open">消息</el-button>
+			<el-button :plain="true" @click="open4">错误</el-button>
+		</template>
+	</section>
+</section>

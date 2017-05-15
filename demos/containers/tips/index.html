@@ -1,0 +1,29 @@
+<section class="tips-page">
+	<h2>Tips 提示</h2>
+	<section>
+		<h3>基础用法</h3>
+		<p class="desc">页面中的非浮层元素，不会自动消失。</p>
+		<template>
+			<el-alert title="成功提示的文案" type="success">
+			</el-alert>
+			<el-alert title="消息提示的文案" type="info">
+			</el-alert>
+			<el-alert title="警告提示的文案" type="warning">
+			</el-alert>
+			<el-alert title="错误提示的文案" type="error">
+			</el-alert>
+		</template>
+	</section>
+	<section>
+		<h3>自定义关闭按钮</h3>
+		<p class="desc">自定义关闭按钮为文字或其他符号。</p>
+		<template>
+			<el-alert title="不可关闭的 alert" type="success" :closable="false">
+			</el-alert>
+			<el-alert title="自定义 close-text" type="info" close-text="知道了">
+			</el-alert>
+			<el-alert title="设置了回调的 alert" type="warning" @close="hello">
+			</el-alert>
+		</template>
+	</section>
+</section>

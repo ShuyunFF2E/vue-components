@@ -1,0 +1,44 @@
+<div id="app">
+	<section id="CONTAINER">
+		<h1>UI Components Dashboard</h1>
+
+		<aside id="MENU">
+			<el-menu default-active="1-1" :router="true" :default-openeds="[1,2,3]" class="el-menu-vertical-demo">
+				<el-submenu index="1">
+					<template slot="title"><i class="el-icon-date"></i>基础组件</template>
+					<el-menu-item index="1-1" :route="{name:'button'}">Button 按钮</el-menu-item>
+				</el-submenu>
+
+				<el-submenu index="2">
+					<template slot="title"><i class="el-icon-date"></i>表单组件</template>
+					<el-menu-item index="2-2" :route="{name:'input'}">Input 输入框</el-menu-item>
+					<el-menu-item index="2-3" :route="{name:'radio'}">Radio 单选框</el-menu-item>
+					<el-menu-item index="2-4" :route="{name:'checkbox'}">Checkbox 多选框</el-menu-item>
+					<el-menu-item index="2-5" :route="{name:'select'}">Select 下拉框</el-menu-item>
+					<el-menu-item index="2-6" :route="{name:'switch'}">Switch 开关</el-menu-item>
+					<el-menu-item index="2-7" :route="{name:'timepicker'}">TimePicker 时间选择器</el-menu-item>
+					<el-menu-item index="2-8" :route="{name:'datepicker'}">DatePicker 日期选择器</el-menu-item>
+					<el-menu-item index="2-9" :route="{name:'datetimepicker'}">DateTimePicker 日期时间选择器</el-menu-item>
+				</el-submenu>
+
+				<el-submenu index="3">
+					<template slot="title"><i class="el-icon-date"></i>数据组件</template>
+					<el-menu-item index="3-1" :route="{name:'table'}">Table 表格</el-menu-item>
+					<el-menu-item index="3-2" :route="{name:'pagination'}">Pagination 分页器</el-menu-item>
+				</el-submenu>
+
+				<el-submenu index="4">
+					<template slot="title"><i class="el-icon-date"></i>提示组件</template>
+					<el-menu-item index="4-1" :route="{name:'tips'}">Tips</el-menu-item>
+					<el-menu-item index="4-2" :route="{name:'loading'}">Loading</el-menu-item>
+					<el-menu-item index="4-2" :route="{name:'toast'}">Toast</el-menu-item>
+				</el-submenu>
+			</el-menu>
+		</aside>
+
+		<div id="CONTENT">
+			<router-view></router-view>
+
+		</div>
+	</section>
+</div>

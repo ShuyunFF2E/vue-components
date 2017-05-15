@@ -1,0 +1,34 @@
+<section class="input-page">
+	<h2>Input 输入框</h2>
+	<section>
+		<h3>基础用法</h3>
+		<div class="el-input">
+			<el-input v-model="input" placeholder="请输入内容"></el-input>
+		</div>
+	</section>
+	<section>
+		<h3>禁用状态</h3>
+		<div class="el-input">
+			<el-input v-model="input" placeholder="请输入内容" :disabled="true"></el-input>
+		</div>
+	</section>
+	<section>
+		<h3>带 icon 的输入框</h3>
+		<div class="el-input">
+			<el-input v-model="input" placeholder="请选择日期" icon="search"></el-input>
+		</div>
+	</section>
+	<section>
+		<h3>尺寸</h3>
+		<div class="demo-input-size">
+			<el-input size="large" placeholder="请输入内容" v-model="input">
+			</el-input>
+			<el-input placeholder="请输入内容" v-model="input">
+			</el-input>
+			<el-input size="small" placeholder="请输入内容" v-model="input">
+			</el-input>
+			<el-input size="mini" placeholder="请输入内容" v-model="input">
+			</el-input>
+		</div>
+	</section>
+</section>

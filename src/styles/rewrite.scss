@@ -1,0 +1,55 @@
+.el-loading-mask {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.el-message {
+    .el-message__closeBtn, .el-message__group p {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    &.error-toast {
+        background-color: #ffdfe0;
+        border: 1px solid #ffdfe0;
+
+        .el-message__closeBtn {
+            color: #853432;
+        }
+
+        .el-message__group p {
+            color: #853432;
+        }
+
+        .el-icon-warning {
+            font-size: 16px;
+            color: #ff5243;
+        }
+
+        .el-message__icon {
+            margin-top: -3px;
+        }
+    }
+
+    &.success-toast {
+        background-color: #d8f2d4;
+        border: 1px solid transparent;
+
+        .el-message__closeBtn {
+            color: #13ce66;
+        }
+
+        .el-message__group p {
+            color: #13ce66;
+        }
+
+        .el-icon-warning {
+            font-size: 16px;
+            color: #13ce66;
+        }
+
+        .el-message__icon {
+            margin-top: -3px;
+            font-size: 16px;
+        }
+    }
+}

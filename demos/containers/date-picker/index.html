@@ -1,0 +1,35 @@
+<section class="datepicker-page">
+	<h2>日期选择器</h2>
+
+	<section>
+		<h3>选择日</h3>
+		<div>
+			<div class="block">
+				<span class="demonstration">默认</span>
+				<el-date-picker v-model="value1" type="date" placeholder="选择日期" :picker-options="pickerOptions0">
+				</el-date-picker>
+			</div>
+			<div class="block">
+				<span class="demonstration">带快捷选项</span>
+				<el-date-picker v-model="value2" align="right" type="date" placeholder="选择日期" :picker-options="pickerOptions1">
+				</el-date-picker>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h3>选择日期范围</h3>
+		<div>
+			<div class="block">
+				<span class="demonstration">默认</span>
+				<el-date-picker v-model="value6" type="daterange" placeholder="选择日期范围">
+				</el-date-picker>
+			</div>
+			<div class="block">
+				<span class="demonstration">带快捷选项</span>
+				<el-date-picker v-model="value7" type="daterange" align="right" placeholder="选择日期范围" :picker-options="pickerOptions2">
+				</el-date-picker>
+			</div>
+		</div>
+	</section>
+</section>
