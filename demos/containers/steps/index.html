@@ -1,0 +1,65 @@
+<section class="steps-page">
+	<h2>Steps 步骤条</h2>
+	<section>
+		<h3>基础用法</h3>
+		<p class="desc">简单的步骤条。</p>
+		<template>
+			<el-steps :space="100" :active="active" finish-status="success">
+				<el-step title="步骤 1"></el-step>
+				<el-step title="步骤 2"></el-step>
+				<el-step title="步骤 3"></el-step>
+			</el-steps>
+
+			<el-button style="margin-top: 12px;" @click="next">下一步</el-button>
+
+		</template>
+	</section>
+
+	<section>
+		<h3>含状态步骤条</h3>
+		<p class="desc">每一步骤显示出该步骤的状态。</p>
+		<template>
+			<el-steps :space="100" :active="1" finish-status="success">
+				<el-step title="已完成"></el-step>
+				<el-step title="进行中"></el-step>
+				<el-step title="步骤 3"></el-step>
+			</el-steps>
+		</template>
+	</section>
+
+	<section>
+		<h3>有描述的步骤条</h3>
+		<p class="desc">每个步骤有其对应的步骤状态描述。</p>
+		<template>
+			<el-steps :space="200" :active="1">
+				<el-step title="步骤 1" description="这是一段很长很长很长的描述性文字"></el-step>
+				<el-step title="步骤 2" description="这是一段很长很长很长的描述性文字"></el-step>
+				<el-step title="步骤 3" description="这是一段很长很长很长的描述性文字"></el-step>
+			</el-steps>
+		</template>
+	</section>
+
+	<section>
+		<h3>带图标的步骤条</h3>
+		<p class="desc">步骤条内可以启用各种自定义的图标。</p>
+		<template>
+			<el-steps :space="100" :active="1">
+				<el-step title="步骤 1" icon="edit"></el-step>
+				<el-step title="步骤 2" icon="upload"></el-step>
+				<el-step title="步骤 3" icon="picture"></el-step>
+			</el-steps>
+		</template>
+	</section>
+
+	<section>
+		<h3>竖式步骤条</h3>
+		<p class="desc">竖直方向的步骤条。</p>
+		<template>
+			<el-steps :space="100" direction="vertical" :active="1">
+				<el-step title="步骤 1"></el-step>
+				<el-step title="步骤 2"></el-step>
+				<el-step title="步骤 3"></el-step>
+			</el-steps>
+		</template>
+	</section>
+</section>

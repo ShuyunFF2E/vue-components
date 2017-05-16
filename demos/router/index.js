@@ -24,6 +24,8 @@ import Alert from '@/containers/alert';
 // navigator
 import Tabs from '@/containers/tabs';
 import Breadcrumb from '@/containers/breadcrumb';
+import Dropdown from '@/containers/dropdown';
+import Steps from '@/containers/steps';
 
 Vue.use(Router);
 
@@ -97,6 +99,14 @@ export default new Router({
 			name: 'breadcrumb',
 			path: '/breadcrumb',
 			component: Breadcrumb
+		}, {
+			name: 'dropdown',
+			path: '/dropdown',
+			component: Dropdown
+		}, {
+			name: 'steps',
+			path: '/steps',
+			component: Steps
 		}
 	]
 });

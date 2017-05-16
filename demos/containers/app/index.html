@@ -3,10 +3,10 @@
 		<h1>UI Components Dashboard</h1>
 
 		<aside id="MENU">
-			<el-menu default-active="1-1" :router="true" :default-openeds="[1,2,3]" class="el-menu-vertical-demo">
+			<el-menu default-active="button" :router="true" :default-openeds="['1','2','3','4','5']" class="el-menu-vertical-demo">
 				<el-submenu index="1">
 					<template slot="title"><i class="el-icon-date"></i>基础组件</template>
-					<el-menu-item index="1-1" :route="{name:'button'}">Button 按钮</el-menu-item>
+					<el-menu-item index="button" :route="{name:'button'}">Button 按钮</el-menu-item>
 				</el-submenu>
 
 				<el-submenu index="2">

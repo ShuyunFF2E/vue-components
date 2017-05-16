@@ -1,0 +1,48 @@
+<section class="dropdown-page">
+	<h2>Breadcrumb 下拉菜单</h2>
+	<section>
+		<h3>基础用法</h3>
+		<p class="desc">移动到下拉菜单上，展开更多操作。</p>
+		<template>
+			<el-dropdown>
+				<span class="el-dropdown-link">下拉菜单<i class="el-icon-caret-bottom el-icon--right"></i></span>
+				<el-dropdown-menu slot="dropdown">
+					<el-dropdown-item>黄金糕</el-dropdown-item>
+					<el-dropdown-item>狮子头</el-dropdown-item>
+					<el-dropdown-item>螺蛳粉</el-dropdown-item>
+					<el-dropdown-item disabled>双皮奶</el-dropdown-item>
+					<el-dropdown-item divided>蚵仔煎</el-dropdown-item>
+				</el-dropdown-menu>
+			</el-dropdown>
+		</template>
+	</section>
+
+	<section>
+		<h3>触发对象</h3>
+		<p class="desc">可使用按钮触发下拉菜单。</p>
+		<template>
+			<el-dropdown>
+				<el-button type="primary">
+					更多菜单<i class="el-icon-caret-bottom el-icon--right"></i>
+				</el-button>
+				<el-dropdown-menu slot="dropdown">
+					<el-dropdown-item>黄金糕</el-dropdown-item>
+					<el-dropdown-item>狮子头</el-dropdown-item>
+					<el-dropdown-item>螺蛳粉</el-dropdown-item>
+					<el-dropdown-item>双皮奶</el-dropdown-item>
+					<el-dropdown-item>蚵仔煎</el-dropdown-item>
+				</el-dropdown-menu>
+			</el-dropdown>
+			<el-dropdown split-button type="primary" @click="handleClick">
+				更多菜单
+				<el-dropdown-menu slot="dropdown">
+					<el-dropdown-item>黄金糕</el-dropdown-item>
+					<el-dropdown-item>狮子头</el-dropdown-item>
+					<el-dropdown-item>螺蛳粉</el-dropdown-item>
+					<el-dropdown-item>双皮奶</el-dropdown-item>
+					<el-dropdown-item>蚵仔煎</el-dropdown-item>
+				</el-dropdown-menu>
+			</el-dropdown>
+		</template>
+	</section>
+</section>
