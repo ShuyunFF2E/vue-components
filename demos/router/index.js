@@ -15,10 +15,15 @@ import DateTimePicker from '@/containers/datetime-picker';
 import Table from '@/containers/table';
 import Pagination from '@/containers/pagination';
 
-
+// notice
 import Tips from '@/containers/tips';
 import Loading from '@/containers/loading';
 import Toast from '@/containers/toast';
+import Alert from '@/containers/alert';
+
+// navigator
+import Tabs from '@/containers/tabs';
+import Breadcrumb from '@/containers/breadcrumb';
 
 Vue.use(Router);
 
@@ -80,6 +85,18 @@ export default new Router({
 			name: 'toast',
 			path: '/toast',
 			component: Toast
+		}, {
+			name: 'alert',
+			path: '/alert',
+			component: Alert
+		}, {
+			name: 'tabs',
+			path: '/tabs',
+			component: Tabs
+		}, {
+			name: 'breadcrumb',
+			path: '/breadcrumb',
+			component: Breadcrumb
 		}
 	]
 });

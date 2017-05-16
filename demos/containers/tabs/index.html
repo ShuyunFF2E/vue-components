@@ -1,0 +1,55 @@
+<section class="toast-page">
+	<h2>Tabs 标签页</h2>
+	<section>
+		<h3>基础用法</h3>
+		<p class="desc">基础的、简洁的标签页。</p>
+		<template>
+			<el-tabs v-model="activeName" @tab-click="handleClick">
+				<el-tab-pane label="用户管理" name="first">用户管理</el-tab-pane>
+				<el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
+				<el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
+				<el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
+			</el-tabs>
+		</template>
+	</section>
+	<section>
+		<h3>选项卡样式</h3>
+		<p class="desc">选项卡样式的标签页。</p>
+		<template>
+			<el-tabs v-model="activeName2" type="card" @tab-click="handleClick">
+				<el-tab-pane label="用户管理" name="first">用户管理</el-tab-pane>
+				<el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
+				<el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
+				<el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
+			</el-tabs>
+		</template>
+	</section>
+
+	<section>
+		<h3>卡片化</h3>
+		<p>卡片化的标签页。</p>
+		<template>
+			<el-tabs type="border-card">
+				<el-tab-pane label="用户管理">用户管理</el-tab-pane>
+				<el-tab-pane label="配置管理">配置管理</el-tab-pane>
+				<el-tab-pane label="角色管理">角色管理</el-tab-pane>
+				<el-tab-pane label="定时任务补偿">定时任务补偿</el-tab-pane>
+			</el-tabs>
+		</template>
+	</section>
+
+	<section>
+		<h3>自定义标签页</h3>
+		<p>可以通过具名 slot 来实现自定义标签页的内容</p>
+		<template>
+			<el-tabs type="border-card">
+				<el-tab-pane>
+					<span slot="label"><i class="el-icon-date"></i> 我的行程</span> 我的行程
+				</el-tab-pane>
+				<el-tab-pane label="消息中心">消息中心</el-tab-pane>
+				<el-tab-pane label="角色管理">角色管理</el-tab-pane>
+				<el-tab-pane label="定时任务补偿">定时任务补偿</el-tab-pane>
+			</el-tabs>
+		</template>
+	</section>
+</section>
