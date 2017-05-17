@@ -1,0 +1,61 @@
+<section class="carousel-page">
+	<h2>Carousel 走马灯</h2>
+	<section class="carousel-1">
+		<h3>基础用法</h3>
+		<p class="desc">适用广泛的基础用法。</p>
+		<template>
+			<div class="block">
+				<span class="demonstration">默认 Hover 指示器触发</span>
+				<el-carousel height="150px">
+					<el-carousel-item v-for="item in 4" :key="item">
+						<h3>{{ item }}</h3>
+					</el-carousel-item>
+				</el-carousel>
+			</div>
+			<div class="block">
+				<span class="demonstration">Click 指示器触发</span>
+				<el-carousel trigger="click" height="150px">
+					<el-carousel-item v-for="item in 4" :key="item">
+						<h3>{{ item }}</h3>
+					</el-carousel-item>
+				</el-carousel>
+			</div>
+		</template>
+	</section>
+
+	<section class="carousel-2">
+		<h3>指示器</h3>
+		<p class="desc">可以将指示器的显示位置设置在容器外部</p>
+		<template>
+			<el-carousel indicator-position="outside">
+				<el-carousel-item v-for="item in 4" :key="item">
+					<h3>{{ item }}</h3>
+				</el-carousel-item>
+			</el-carousel>
+		</template>
+	</section>
+
+	<section class="carousel-3">
+		<h3>切换箭头</h3>
+		<p class="desc">可以设置切换箭头的显示时机</p>
+		<template>
+			<el-carousel :interval="5000" arrow="always">
+				<el-carousel-item v-for="item in 4" :key="item">
+					<h3>{{ item }}</h3>
+				</el-carousel-item>
+			</el-carousel>
+		</template>
+	</section>
+
+	<section class="carousel-4">
+		<h3>卡片化</h3>
+		<p class="desc">当页面宽度方向空间空余，但高度方向空间匮乏时，可使用卡片风格</p>
+		<template>
+			<el-carousel :interval="4000" type="card" height="200px">
+				<el-carousel-item v-for="item in 6" :key="item">
+					<h3>{{ item }}</h3>
+				</el-carousel-item>
+			</el-carousel>
+		</template>
+	</section>
+</section>

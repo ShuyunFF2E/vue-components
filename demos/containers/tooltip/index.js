@@ -2,11 +2,14 @@ import './index.scss';
 import template from './index.html';
 
 export default {
-	name: 'app',
+	name: 'steps',
 	template,
 	data() {
 		return {
-			activeMenu: this.$router.currentRoute.name
+			disabled: false
 		};
+	},
+
+	methods: {
 	}
 };

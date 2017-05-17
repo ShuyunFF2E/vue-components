@@ -1,53 +1,58 @@
-<div id="app">
-	<section id="CONTAINER">
-		<h1>UI Components Dashboard</h1>
+<section id="CONTAINER">
+	<h1>UI Components Dashboard</h1>
 
-		<aside id="MENU">
-			<el-menu default-active="button" :router="true" :default-openeds="['1','2','3','4','5']" class="el-menu-vertical-demo">
-				<el-submenu index="1">
-					<template slot="title"><i class="el-icon-date"></i>基础组件</template>
-					<el-menu-item index="button" :route="{name:'button'}">Button 按钮</el-menu-item>
-				</el-submenu>
+	<aside id="MENU">
+		<el-menu :default-active="activeMenu" :router="true" :default-openeds="['1','2','3','4','5','6']" class="el-menu-vertical-demo">
+			<el-submenu index="1">
+				<template slot="title"><i class="el-icon-date"></i>基础组件</template>
+				<el-menu-item index="button" :route="{name:'button'}">Button 按钮</el-menu-item>
+			</el-submenu>
 
-				<el-submenu index="2">
-					<template slot="title"><i class="el-icon-date"></i>表单组件</template>
-					<el-menu-item index="2-2" :route="{name:'input'}">Input 输入框</el-menu-item>
-					<el-menu-item index="2-3" :route="{name:'radio'}">Radio 单选框</el-menu-item>
-					<el-menu-item index="2-4" :route="{name:'checkbox'}">Checkbox 多选框</el-menu-item>
-					<el-menu-item index="2-5" :route="{name:'select'}">Select 下拉框</el-menu-item>
-					<el-menu-item index="2-6" :route="{name:'switch'}">Switch 开关</el-menu-item>
-					<el-menu-item index="2-7" :route="{name:'timepicker'}">TimePicker 时间选择器</el-menu-item>
-					<el-menu-item index="2-8" :route="{name:'datepicker'}">DatePicker 日期选择器</el-menu-item>
-					<el-menu-item index="2-9" :route="{name:'datetimepicker'}">DateTimePicker 日期时间选择器</el-menu-item>
-				</el-submenu>
+			<el-submenu index="2">
+				<template slot="title"><i class="el-icon-date"></i>表单组件</template>
+				<el-menu-item index="input" :route="{name:'input'}">Input 输入框</el-menu-item>
+				<el-menu-item index="radio" :route="{name:'radio'}">Radio 单选框</el-menu-item>
+				<el-menu-item index="checkbox" :route="{name:'checkbox'}">Checkbox 多选框</el-menu-item>
+				<el-menu-item index="select" :route="{name:'select'}">Select 下拉框</el-menu-item>
+				<el-menu-item index="switch" :route="{name:'switch'}">Switch 开关</el-menu-item>
+				<el-menu-item index="timepicker" :route="{name:'timepicker'}">TimePicker 时间选择器</el-menu-item>
+				<el-menu-item index="datepicker" :route="{name:'datepicker'}">DatePicker 日期选择器</el-menu-item>
+				<el-menu-item index="datetimepicker" :route="{name:'datetimepicker'}">DateTimePicker 日期时间选择器</el-menu-item>
+			</el-submenu>
 
-				<el-submenu index="3">
-					<template slot="title"><i class="el-icon-date"></i>数据组件</template>
-					<el-menu-item index="3-1" :route="{name:'table'}">Table 表格</el-menu-item>
-					<el-menu-item index="3-2" :route="{name:'pagination'}">Pagination 分页器</el-menu-item>
-				</el-submenu>
+			<el-submenu index="3">
+				<template slot="title"><i class="el-icon-date"></i>数据组件</template>
+				<el-menu-item index="table" :route="{name:'table'}">Table 表格</el-menu-item>
+				<el-menu-item index="pagination" :route="{name:'pagination'}">Pagination 分页器</el-menu-item>
+			</el-submenu>
 
-				<el-submenu index="4">
-					<template slot="title"><i class="el-icon-date"></i>提示组件</template>
-					<el-menu-item index="4-1" :route="{name:'tips'}">Tips</el-menu-item>
-					<el-menu-item index="4-2" :route="{name:'loading'}">Loading</el-menu-item>
-					<el-menu-item index="4-3" :route="{name:'toast'}">Toast</el-menu-item>
-					<el-menu-item index="4-4" :route="{name:'alert'}">Alert</el-menu-item>
-				</el-submenu>
+			<el-submenu index="4">
+				<template slot="title"><i class="el-icon-date"></i>提示组件</template>
+				<el-menu-item index="tips" :route="{name:'tips'}">Tips</el-menu-item>
+				<el-menu-item index="loading" :route="{name:'loading'}">Loading</el-menu-item>
+				<el-menu-item index="toast" :route="{name:'toast'}">Toast</el-menu-item>
+				<el-menu-item index="alert" :route="{name:'alert'}">Alert</el-menu-item>
+			</el-submenu>
 
-				<el-submenu index="5">
-					<template slot="title"><i class="el-icon-date"></i>导航组件</template>
-					<el-menu-item index="5-1" :route="{name:'tabs'}">Tabs</el-menu-item>
-					<el-menu-item index="5-2" :route="{name:'breadcrumb'}">Breadcrumb</el-menu-item>
-					<el-menu-item index="5-3" :route="{name:'dropdown'}">Dropdown</el-menu-item>
-					<el-menu-item index="5-4" :route="{name:'steps'}">Steps</el-menu-item>
-				</el-submenu>
-			</el-menu>
-		</aside>
+			<el-submenu index="5">
+				<template slot="title"><i class="el-icon-date"></i>导航组件</template>
+				<el-menu-item index="tabs" :route="{name:'tabs'}">Tabs</el-menu-item>
+				<el-menu-item index="breadcrumb" :route="{name:'breadcrumb'}">Breadcrumb</el-menu-item>
+				<el-menu-item index="dropdown" :route="{name:'dropdown'}">Dropdown</el-menu-item>
+				<el-menu-item index="steps" :route="{name:'steps'}">Steps</el-menu-item>
+			</el-submenu>
 
-		<div id="CONTENT">
-			<router-view></router-view>
+			<el-submenu index="6">
+				<template slot="title"><i class="el-icon-date"></i>其他组件</template>
+				<el-menu-item index="dialog" :route="{name:'dialog'}">Dialog</el-menu-item>
+				<el-menu-item index="tooltip" :route="{name:'tooltip'}">Tooltip</el-menu-item>
+				<el-menu-item index="popover" :route="{name:'popover'}">Popover</el-menu-item>
+				<el-menu-item index="carousel" :route="{name:'carousel'}">Carousel</el-menu-item>
+			</el-submenu>
+		</el-menu>
+	</aside>
 
-		</div>
-	</section>
-</div>
+	<div id="CONTENT">
+		<router-view></router-view>
+	</div>
+</section>

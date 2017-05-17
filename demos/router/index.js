@@ -27,9 +27,15 @@ import Breadcrumb from '@/containers/breadcrumb';
 import Dropdown from '@/containers/dropdown';
 import Steps from '@/containers/steps';
 
+// others
+import Dialog from '@/containers/dialog';
+import Tooltip from '@/containers/tooltip';
+import Popover from '@/containers/popover';
+import Carousel from '@/containers/carousel';
+
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
 	routes: [
 		{
 			name: 'button',
@@ -107,6 +113,24 @@ export default new Router({
 			name: 'steps',
 			path: '/steps',
 			component: Steps
+		}, {
+			name: 'dialog',
+			path: '/dialog',
+			component: Dialog
+		}, {
+			name: 'tooltip',
+			path: '/tooltip',
+			component: Tooltip
+		}, {
+			name: 'popover',
+			path: '/popover',
+			component: Popover
+		}, {
+			name: 'carousel',
+			path: '/carousel',
+			component: Carousel
 		}
 	]
 });
+
+export default router;

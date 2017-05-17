@@ -2,11 +2,11 @@ import './index.scss';
 import template from './index.html';
 
 export default {
-	name: 'app',
+	name: 'popover',
 	template,
 	data() {
 		return {
-			activeMenu: this.$router.currentRoute.name
+			visible2: false
 		};
 	}
 };

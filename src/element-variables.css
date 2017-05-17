@@ -44,8 +44,10 @@
   -------------------------- */
   --border-width-base: 1px;
   --border-style-base: solid;
-  --border-color-base: var(--color-extra-light-silver);
-  --border-color-hover: var(--color-base-silver);
+  /*--border-color-base: var(--color-extra-light-silver);*/
+  --border-color-base: #d9d9d9;
+  /*--border-color-hover: var(--color-base-silver);*/
+  --border-color-hover: #aacbe1;
   --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
   --border-radius-base: 2px;
   --border-radius-small: 2px;
@@ -174,7 +176,8 @@
   --select-option-color: var(--link-color);
   --select-option-disabled-color: var(--color-extra-light-silver);
   --select-option-disabled-background: var(--color-white);
-  --select-option-height: 36px;
+  /*--select-option-height: 36px;*/
+   --select-option-height: 32px;
   /*--select-option-hover-background: var(--color-light-gray);*/
   --select-option-hover-background: shade(var(--color-light-gray), 0.05);
   /*--select-option-selected: var(--color-primary);*/
@@ -277,7 +280,8 @@
   --input-fill-disabled: var(--disabled-fill-base);
   --input-color-disabled: var(--font-color-disabled-base);
   --input-icon-color: var(--color-extra-light-silver);
-  --input-placeholder-color: var(--color-light-silver);
+  /*--input-placeholder-color: var(--color-light-silver);*/
+  --input-placeholder-color: #ccc;
   --input-max-width: 314px;
 
   --input-hover-border: var(--border-color-hover);
@@ -424,8 +428,10 @@
   --dialog-tiny-width: 30%;
   --dialog-small-width: 50%;
   --dialog-large-width: 90%;
-  --dialog-close-color: var(--color-extra-light-silver);
-  --dialog-close-hover-color: var(--color-primary);
+  /*--dialog-close-color: var(--color-extra-light-silver);*/
+  --dialog-close-color: #cecece;
+  /*--dialog-close-hover-color: var(--color-primary);*/
+  --dialog-close-hover-color: #A5A5A5;
   --dialog-title-font-size: 16px;
   --dialog-font-size: 14px;
 
