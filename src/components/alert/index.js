@@ -1,5 +1,5 @@
 import './index.scss';
 
-import MessageBox from 'element-ui/packages/message-box/index.js';
+import Alert from 'element-ui/packages/alert';
 
-export default MessageBox;
+export default Alert;

@@ -10,7 +10,7 @@ export default {
 	},
 	methods: {
 		open() {
-			this.$message({
+			this.$toast({
 				message: '这是一条消息提示'
 			});
 		},
@@ -33,7 +33,7 @@ export default {
 		},
 
 		open4() {
-			this.$message.error({
+			this.$toast.error({
 				message: '错了哦，这是一条错误消息',
 				duration: 0,
 				showClose: true,

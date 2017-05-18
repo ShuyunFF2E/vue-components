@@ -1,0 +1,32 @@
+@import '../../../element-theme/message-box.css';
+
+.el-message-box {
+    background: #f8f8f8;
+
+    .el-message-box__header {
+        padding: 15px 15px 0;
+        height: 20px;
+
+        .el-message-box__title {
+            display: none;
+        }
+
+        .el-message-box__close {
+            font-weight: normal;
+            top: 15px;
+        }
+    }
+
+    .el-message-box__content {
+        padding: 30px 64px 30px 30px;
+    }
+
+    .el-message-box__btns {
+        background: #f5f5f5;
+        box-shadow: 0 -1px 0 0 #f1f1f1;
+
+        .el-button {
+            min-width: 80px;
+        }
+    }
+}

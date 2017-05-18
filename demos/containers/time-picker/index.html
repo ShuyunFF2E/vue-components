@@ -8,4 +8,14 @@
 			</el-time-select>
 		</div>
 	</section>
+
+	<section>
+		<h3>任意时间点</h3>
+		<template>
+			<el-time-picker v-model="value2" :picker-options="{
+				selectableRange: '18:30:00 - 20:30:00'
+				}" placeholder="任意时间点">
+			</el-time-picker>
+		</template>
+	</section>
 </section>

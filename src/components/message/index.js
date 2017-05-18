@@ -1,6 +1,6 @@
 import './index.scss';
 
-import Message from 'element-ui/packages/message/index.js';
+import Message from 'element-ui/packages/message';
 /* eslint new-cap: "off" */
 
 // 重写 Message.success 方法
