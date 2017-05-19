@@ -2,7 +2,7 @@ import './index.scss';
 import template from './index.html';
 
 export default {
-	name: 'radio',
+	name: 'timepicker',
 	template,
 	data() {
 		return {

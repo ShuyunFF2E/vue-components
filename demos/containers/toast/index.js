@@ -2,7 +2,7 @@ import './index.scss';
 import template from './index.html';
 
 export default {
-	name: 'tips',
+	name: 'toast',
 	template,
 	data() {
 		return {

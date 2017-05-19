@@ -1,24 +1,28 @@
 <section class="input-page">
 	<h2>Input 输入框</h2>
-	<section>
+
+	<section class="demo-section">
 		<h3>基础用法</h3>
 		<div class="el-input-wrap">
 			<el-input v-model="input" placeholder="请输入内容"></el-input>
 		</div>
 	</section>
-	<section>
+
+	<section class="demo-section">
 		<h3>禁用状态</h3>
 		<div class="el-input-wrap">
 			<el-input v-model="input" placeholder="请输入内容" :disabled="true"></el-input>
 		</div>
 	</section>
-	<section>
+
+	<section class="demo-section">
 		<h3>带 icon 的输入框</h3>
 		<div class="el-input-wrap">
 			<el-input v-model="input" placeholder="请选择日期" icon="search"></el-input>
 		</div>
 	</section>
-	<section>
+
+	<section class="demo-section">
 		<h3>尺寸</h3>
 		<div class="demo-input-size">
 			<el-input size="large" placeholder="请输入内容" v-model="input">
@@ -28,6 +32,27 @@
 			<el-input size="small" placeholder="请输入内容" v-model="input">
 			</el-input>
 			<el-input size="mini" placeholder="请输入内容" v-model="input">
+			</el-input>
+		</div>
+	</section>
+
+	<section class="demo-section">
+		<h3>文本域</h3>
+		<p class="desc">用于输入多行文本信息，通过将 type 属性的值指定为 textarea。</p>
+		<div class="demo-input-size">
+			<el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="textarea">
+			</el-input>
+		</div>
+	</section>
+
+	<section class="demo-section">
+		<h3>可自适应文本高度的文本域</h3>
+		<p class="desc">通过设置 autosize 属性可以使得文本域的高度能够根据文本内容自动进行调整，并且 autosize 还可以设定为一个对象，指定最小行数和最大行数。</p>
+		<div class="demo-input-size">
+			<el-input type="textarea" autosize placeholder="请输入内容" v-model="textarea2">
+			</el-input>
+			<div style="margin: 20px 0;"></div>
+			<el-input type="textarea" :autosize="{ minRows: 2, maxRows: 4}" placeholder="请输入内容" v-model="textarea3">
 			</el-input>
 		</div>
 	</section>

@@ -1,6 +1,7 @@
 <section class="table-page">
 	<h2>Table 表格</h2>
-	<section>
+
+	<section class="demo-section">
 		<h3>基础用法</h3>
 		<div>
 			<el-table :data="tableData" style="width: 100%">
@@ -13,7 +14,8 @@
 			</el-table>
 		</div>
 	</section>
-	<section>
+
+	<section class="demo-section">
 		<h3>多选</h3>
 		<div>
 			<el-table ref="multipleTable" :data="tableData3" border tooltip-effect="dark" style="width: 100%" @selection-change="handleSelectionChange">

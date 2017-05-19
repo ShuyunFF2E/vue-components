@@ -5,7 +5,7 @@ import dialogOpts1 from './instance1';
 import dialogOptsGen from './instance2';
 
 export default {
-	name: 'steps',
+	name: 'dialog',
 	template,
 	data() {
 		return {
