@@ -1,7 +1,8 @@
 import './index.scss';
 import template from './index.html';
 
-import dialog1 from './instance';
+import dialogOpts1 from './instance1';
+import dialogOptsGen from './instance2';
 
 export default {
 	name: 'steps',
@@ -51,10 +52,21 @@ export default {
 				.catch(() => { });
 		},
 
-		createDialog() {
-			// this.$dialog(dialog1);
-			const instance = this.$dialog(dialog1);
-			instance.open();
+		createDialog1() {
+			const instance = this.$dialog(dialogOpts1).open();
+
+			setTimeout(() => {
+				instance.close();
+			}, 5000);
+		},
+
+		createDialog2() {
+			const dialogOpts2 = dialogOptsGen({ dialogTableVisible: true }, {
+				handleClose() {
+					this.dialogTableVisible = false;
+				}
+			});
+			const instance = this.$dialog(dialogOpts2).open();
 
 			setTimeout(() => {
 				instance.close();

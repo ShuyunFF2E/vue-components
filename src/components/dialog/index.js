@@ -16,17 +16,24 @@ const DialogService = function (options = {}) {
 	const instance = new DialogConstructor();
 
 	return {
+		/* eslint no-underscore-dangle: "off"	*/
 		open() {
-			console.log(instance);
-			instance.vm = instance.$mount();
-			instance.dom = instance.vm.$el;
-			document.body.appendChild(instance.vm.$el);
+			if (instance._isMounted) {
+				console.error('This dialog instance is opened!');
+				return this;
+			}
+			instance.$mount();
+			document.body.appendChild(instance.$el);
+			return this;
 		},
 		close() {
+			if (instance._isDestroyed || instance._isBeingDestroyed) {
+				console.error('This dialog instance is closed!');
+				return this;
+			}
 			instance.$destroy();
-			document.body.removeChild(instance.vm.$el);
-			instance.vm = null;
-			instance.dom = null;
+			document.body.removeChild(instance.$el);
+			return this;
 		}
 	};
 };
