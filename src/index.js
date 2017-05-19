@@ -55,7 +55,7 @@ import Steps from './components/steps';
 import Step from './components/step';
 
 
-import Dialog from './components/dialog';
+import Dialog, { DialogService } from './components/dialog';
 import Tooltip from './components/tooltip';
 import Popover from './components/popover';
 import Carousel from './components/carousel';
@@ -105,6 +105,8 @@ const install = Vue => {
 	Vue.prototype.$tips = Message;
 	Vue.prototype.$toast = Message;
 	Vue.prototype.$message = Message;
+
+	Vue.prototype.$dialog = DialogService;
 };
 
 

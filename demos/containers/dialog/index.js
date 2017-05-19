@@ -1,6 +1,8 @@
 import './index.scss';
 import template from './index.html';
 
+import dialog1 from './instance';
+
 export default {
 	name: 'steps',
 	template,
@@ -47,6 +49,16 @@ export default {
 					done();
 				})
 				.catch(() => { });
+		},
+
+		createDialog() {
+			// this.$dialog(dialog1);
+			const instance = this.$dialog(dialog1);
+			instance.open();
+
+			setTimeout(() => {
+				instance.close();
+			}, 5000);
 		}
 	}
 };
